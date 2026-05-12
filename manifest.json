@@ -3,6 +3,6 @@
   "short_name": "Stay Focus",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "      
+"background_color": "#ffffff",      
   "theme_color": "#333"
 }
