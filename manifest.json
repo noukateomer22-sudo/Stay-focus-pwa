@@ -1,0 +1,8 @@
+{
+  "name": "Stay Focus",
+  "short_name": "Stay Focus",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "      
+  "theme_color": "#333"
+}
