@@ -1,0 +1,26 @@
+const objectif = document.getElementById('objectif');
+const citation = document.getElementById('citation');
+const startButton = document.getElementById('start');
+
+const citations = [
+  "La réussite, c'est l'échec de l'excuse.",
+  "Le succès, c'est la somme de petits efforts répétés.",
+  // ...
+];
+
+let compteARebours;
+
+startButton.addEventListener('click', () => {
+  const objectifValue = prompt('Entrez votre objectif :');
+  objectif.textContent = objectifValue;
+  compteARebours = setInterval(() => {
+    // Mettre à jour le compte à rebours ici
+  }, 1000);
+});
+
+function afficherCitation() {
+  citation.textContent = citations[Math.floor(Math.random() * citations.length)];
+}
+
+afficherCitation();
+setInterval(afficherCitation, 60000); // Changer la citation toutes les minutes
